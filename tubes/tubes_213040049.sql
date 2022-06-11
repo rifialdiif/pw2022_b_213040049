@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Bulan Mei 2021 pada 06.38
--- Versi server: 10.1.38-MariaDB
--- Versi PHP: 7.3.2
+-- Generation Time: Jun 11, 2022 at 04:38 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.3.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,48 +18,51 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pw_203040008`
+-- Database: `tubes_213040049`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `anime`
+-- Table structure for table `anime`
 --
 
 CREATE TABLE `anime` (
   `id` int(11) NOT NULL,
   `judul` varchar(100) NOT NULL,
   `produser` varchar(100) NOT NULL,
-  `status` varchar(100) NOT NULL,
+  `kondisi` varchar(100) NOT NULL,
   `total_episode` varchar(100) NOT NULL,
   `genre` varchar(100) NOT NULL,
-  `gambar` varchar(100) NOT NULL,
+  `foto` varchar(100) NOT NULL,
   `studio` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `anime`
+-- Dumping data for table `anime`
 --
 
-INSERT INTO `anime` (`id`, `judul`, `produser`, `status`, `total_episode`, `genre`, `gambar`, `studio`) VALUES
-(1, 'Go-Toubun no Hanayome', 'DAX Production, Nichion', 'On Going', '12 Episode', 'Comedy, Romance, School, Shounen', 'go.jpg', 'Bibury Animation Studios'),
-(2, 'Jujutsu Kaisen', 'TOHO animation, Shueisha, dugout', 'On Going', '24 Episode', 'Action, Demons, Horror, School', '60a34136c4ae7.jpeg', 'MAPPA'),
+INSERT INTO `anime` (`id`, `judul`, `produser`, `kondisi`, `total_episode`, `genre`, `foto`, `studio`) VALUES
+(1, 'Go-toubun no Hanayome', 'DAX Production, Nichion', 'Completed', '13 Episode', 'Comedy, Romance, School, Shounen', 'go.jpg', 'Bibury Animation Studios'),
+(2, 'Jujutsu Kaisen', 'TOHO animation, Shueisha, dugout', 'Completed', '24 Episode', 'Action, Demons, Horror, School', '60a34136c4ae7.jpeg', 'MAPPA'),
 (3, 'Tonikaku Kawaii', 'Shogakukan-Shueisha Productions', 'Completed', '12 Episode', 'Comedy, Romance, Shounen', 'to.jpg', 'Seven Arcs'),
-(4, 'Shingeki no Kyoujin Season 4', 'Pony Canyon, Techno Sound', 'On Going', '12 Episode', 'Action, Drama, Fantasy, Millitary', 'shi.jpg', 'MAPPA'),
-(14, 'Horimiya', 'Aniplex', 'On Going', '12 Episode', 'Comedy, Romance, School, Shounen', 'hori.jpg', 'CloverWorks'),
-(15, 'Yakusoku no Neverland Season 2', 'Aniplex, Shueisha', 'On Going', '12 Episode', 'Mystery, Psychological, Sci-Fi, Shounen', 'ya.jpg', 'CloverWorks'),
-(16, 'Dr. Stone Season 2', 'Shueisha', 'On Going', '-', 'Adventure, Sci-Fi, Shounen', 'sto.jpg', 'TMS Entertainment'),
-(17, 'Mushoku Tensei: Isekai Ittara Honki Dasu', 'Egg Firm', 'On Going', '-', 'Drama, Fantasy, Magic', 'mus.jpg', 'Winter 2021'),
+(4, 'Shingeki no Kyoujin Season 4', 'Pony Canyon, Techno Sound', 'Completed', '12 Episode', 'Action, Drama, Fantasy, Millitary', 'shi.jpg', 'MAPPA'),
+(14, 'Horimiya', 'Aniplex', 'Completed', '12 Episode', 'Comedy, Romance, School, Shounen', 'hori.jpg', 'CloverWorks'),
+(15, 'Yakusoku no Neverland Season 2', 'Aniplex, Shueisha', 'Completed', '12 Episode', 'Mystery, Psychological, Sci-Fi, Shounen', 'ya.jpg', 'CloverWorks'),
+(16, 'Dr. Stone Season 2', 'Shueisha', 'Completed', '12 Episode', 'Adventure, Sci-Fi, Shounen', 'sto.jpg', 'TMS Entertainment'),
+(17, 'Mushoku Tensei: Isekai Ittara Honki Dasu', 'Egg Firm', 'Completed', '24 Episode', 'Drama, Fantasy, Magic', 'mus.jpg', 'Winter 2021'),
 (18, 'Black Clover', 'TV Tokyo, Avex Pictures, Shueisha', 'On Going', '-', 'Action, Comedy, Fantasy, Magic, Shounen', 'bla.jpg', 'Studio Pierrot'),
 (19, 'Re:Zero Kara Hajimeru Isekai Seikatsu Season 2', 'AT-X, Memory-Tech', 'Completed', '25 Episode', 'Drama, Fantasy, Psychological, Thriller', 're.jpg', 'White Fox'),
-(20, 'Osananajimi ga Zettai ni Makenai Love Comedy', 'Delfi Sound, Kadokawa', 'On Going', '12 Episode', 'Comedy, Harem, Romance, School,', 'osa.jpg', 'Doga Kobo'),
-(23, 'Wonder Egg Priority', 'Aniplex, D.N. Dream Partners', 'Completed', '12 Episode', 'Drama, Fantasy, Psychological', 'won.jpg', 'CloverWorks');
+(20, 'Osananajimi ga Zettai ni Makenai Love Comedy', 'Delfi Sound, Kadokawa', 'Completed', '12 Episode', 'Comedy, Harem, Romance, School,', 'osa.jpg', 'Doga Kobo'),
+(23, 'Wonder Egg Priority', 'Aniplex, D.N. Dream Partners', 'Completed', '12 Episode', 'Drama, Fantasy, Psychological', 'won.jpg', 'CloverWorks'),
+(29, 'Ookami shoujo to kuro ouji', 'VAP, Yomiuri Telecasting, Nippon Television Network', 'Completed', '12 Episode', 'Comedy, Romance', '62a366ccd1ccd.jpg', 'TYO Animations'),
+(30, 'Ao Haru Ride', 'Mainichi Broadcasting System, Movic, Sony Music Entertainment, TOHO animation, Shueisha, BS11, Anima', 'Completed', '12 Episode', 'Drama, Romance, Slice of Life', '62a367771f9b0.jpg', 'Production I.G'),
+(32, 'Classroom Elite', 'Studio Hibari, Lantis, Media Factory, AT-X, Sony Music Communications, Toranoana, Kadokawa Media Hou', 'Completed', '24 Episode', 'Psychological, School', '62a36aa48e2cd.jpg', 'Lerche');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -70,44 +72,46 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
 (3, 'pw', '$2y$10$q1SsUA5JCFyLdqf1l3qX5OVnYIJoI/DwBNigPPBnwNz1/kUtuejB.'),
-(4, 'admin', '$2y$10$EaJqEgbSO6aybBvE.copguX7oBDfK/zumk.Tio0qD/e.Xta98rIOa');
+(4, 'admin', '$2y$10$EaJqEgbSO6aybBvE.copguX7oBDfK/zumk.Tio0qD/e.Xta98rIOa'),
+(5, 'rifialdi1', 'rifialdi1'),
+(6, 'rifialdi2', '$2y$10$nKhh0pq9GJWEj8rZcozFm.ogINXDycd/Y6QwXf35R/wjct2OfMl8a');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `anime`
+-- Indexes for table `anime`
 --
 ALTER TABLE `anime`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `anime`
+-- AUTO_INCREMENT for table `anime`
 --
 ALTER TABLE `anime`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
