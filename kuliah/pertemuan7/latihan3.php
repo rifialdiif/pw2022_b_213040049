@@ -7,6 +7,8 @@
     <title>POST</title>
 </head>
 <body>
+
+<h1>Hallo</h1>
     <form action="latihan4.php" method="post">
         Masukkan Nama:
        <input type="text" name="nama"> 

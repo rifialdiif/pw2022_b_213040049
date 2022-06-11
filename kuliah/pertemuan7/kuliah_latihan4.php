@@ -21,6 +21,55 @@ $mahasiswa = [
         "jurusan" => "Teknik Informatika",
         "gambar" => "img/chziuru.jpg"
     ],
+    [
+        "nama" =>"Fujiwara",
+        "npm" => "213040000",
+        "email" => "fuji@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik1.jpg"
+    ],
+    [
+        "nama" =>"Hayasaka",
+        "npm" => "213040001",
+        "email" => "haya@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik2.jpg"
+    ],
+    [
+        "nama" =>"Shinomiya",
+        "npm" => "213040002",
+        "email" => "shino@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik3.jpg"
+    ],
+    [
+        "nama" =>"Ireena",
+        "npm" => "213040003",
+        "email" => "iree@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik4.jpg"
+    ],
+    [
+        "nama" =>"Ginny",
+        "npm" => "213040004",
+        "email" => "gin@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik5.jpg"
+    ],
+    [
+        "nama" =>"Raphtalia",
+        "npm" => "213040005",
+        "email" => "raph@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik6.jpg"
+    ],
+    [
+        "nama" =>"Minji",
+        "npm" => "213040006",
+        "email" => "minji@gmail.com",
+        "jurusan" => "Teknik Informatika",
+        "gambar" => "img/cantik7.jpg"
+    ],
 
 ];
 
