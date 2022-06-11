@@ -31,7 +31,7 @@ if (isset($_POST['registrasi'])) {
   <div class="register-photo" style="height: 690px;">
     <div class="form-container">
       <form method="post" style="height: 400px;">
-        <h2 class="text-center" style="font-family: Allerta, sans-serif;color: rgb(255,0,0);">
+        <h2 class="text-center" style="font-family: Allerta, sans-serif;color: #b8d8f3;">
           <strong>Create </strong>account
         </h2>
         <div class="form-group">
@@ -39,15 +39,15 @@ if (isset($_POST['registrasi'])) {
           <input class="form-control" type="text" name="username" id="username" style="background-color: rgb(255,255,255);" required autofocus autocomplete="off">
         </div>
         <div class="form-group">
-          <label for="password" class="text-danger">Password :</label>
+          <label for="password" class="text-primary">Password :</label>
           <input class="form-control" type="password" name="password1" id="password1" style="background-color: rgb(255,255,255);" required>
         </div>
         <div class="form-group">
-          <label for="password" class="text-danger">Confirm Password :</label>
+          <label for="password" class="text-primary">Confirm Password :</label>
           <input class="form-control" type="password" name="password2" id="password2" style="background-color: rgb(255,255,255);" required>
         </div>
         <div class="form-group">
-          <button class="btn btn-primary btn-block" data-bs-hover-animate="pulse" name="registrasi" type="submit" style="background-color: rgb(255,0,53);">Registration</button>
+          <button class="btn btn-primary btn-block" data-bs-hover-animate="pulse" name="registrasi" type="submit" style="background-color:#1E90FF;">Registration</button>
         </div>
         <a class="already" href="login.php">Already have account? Login here.</a>
       </form>
