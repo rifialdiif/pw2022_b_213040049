@@ -61,7 +61,7 @@ if (isset($_POST['cari'])) {
             <label for="search-field">
               <i class="fa fa-search"></i>
             </label>
-            <input class="form-control search-field" type="text" id="search-field" name="keyword" autocomplete="off" placeholder="Masukkan keyword ...">
+            <input class="form-control search-field" type="text" id="search-field" name="keyword" autocomplete="off" placeholder="Enter keywords ...">
             <button type="submit" name="cari" class="tombol-cari">Cari!</button>
           </div>
         </form>
